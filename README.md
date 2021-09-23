@@ -1,3 +1,3 @@
 # Getting Started
 
-Test of discord notification
+This project is built using storybook and Atomic Design pattern.
