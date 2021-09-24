@@ -1,12 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "jest": true
     },
     "extends": [
-        "plugin:react/recommended",
         "airbnb",
-        "prettier"
+        "prettier",
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,17 +17,45 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
         "react/jsx-props-no-spreading": "off",
         "react/jsx-one-expression-per-line": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
         "linebreak-style": "off",
         "object-curly-newline": [
             "error",
             { "ImportDeclaration": { "multiline": true, "minProperties": 2 } }
         ],
-        "object-property-newline": "error"
+        "object-property-newline": "error",
+        "curly": "error",
+        "block-spacing": "warn",
+        "jsx-quotes": ["error", "prefer-single"],
+        "quotes": ["error", "single"],
+        "object-curly-spacing": ["error", "always"],
+        "semi": ["error", "always"],
+        "semi-spacing": "error",
+        "comma-dangle": ["error", "always-multiline"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "prettier/prettier": "error"
+    },
+    "overrides": [
+        {
+            "files": ["**/*.spec.js", "**/*.spec.jsx"],
+            "env": {
+                "jest": true
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
     }
 }
