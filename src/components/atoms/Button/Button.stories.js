@@ -1,6 +1,6 @@
 import React from 'react';
+import theme from 'theme/MainTheme';
 import Button from './Button';
-// import theme from '../../../theme/MainTheme';
 
 export default {
   title: 'Atoms/Buttom',
@@ -17,5 +17,5 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   text: 'hello',
-  // background: theme.color.text.primary,
+  background: theme.color.text.primary,
 };
