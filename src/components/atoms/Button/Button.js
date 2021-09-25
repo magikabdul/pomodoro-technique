@@ -4,6 +4,9 @@ import styled from 'styled-components';
 
 const Container = styled.button`
   background-color: ${({ background }) => background};
+
+  font-family: inherit;
+  font-size: 40px;
 `;
 
 const Button = ({ text, background }) => <Container background={background}>{text}</Container>;
