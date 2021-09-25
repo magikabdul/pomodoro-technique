@@ -26,15 +26,16 @@
         "react/jsx-one-expression-per-line": "off",
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
+        "react/jsx-curly-brace-presence": ["off", { "props": "ignore", "children": "ignore" }],
         "linebreak-style": "off",
         "object-curly-newline": [
             "error",
             { "ImportDeclaration": { "multiline": true, "minProperties": 2 } }
         ],
         "object-property-newline": "error",
-        "curly": "error",
+//        "curly": "error",
         "block-spacing": "warn",
-        "jsx-quotes": ["error", "prefer-single"],
+//        "jsx-quotes": ["error", "prefer-single"],
         "quotes": ["error", "single"],
         "object-curly-spacing": ["error", "always"],
         "semi": ["error", "always"],
