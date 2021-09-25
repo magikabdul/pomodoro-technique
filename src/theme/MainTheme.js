@@ -12,6 +12,12 @@ const theme = {
       primary: '#d5e5f1',
     },
   },
+
+  fontSize: {
+    s: '16px',
+    m: '30px',
+    l: '40px',
+  },
 };
 
 export default theme;
