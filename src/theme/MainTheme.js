@@ -10,6 +10,7 @@ const theme = {
 
     text: {
       primary: '#d5e5f1',
+      secondary: '#CEB600',
     },
   },
 
@@ -17,6 +18,7 @@ const theme = {
     s: '16px',
     m: '30px',
     l: '40px',
+    xl: '100px',
   },
 };
 
