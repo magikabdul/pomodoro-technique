@@ -22,6 +22,12 @@ const IconBox = styled.div`
   color: ${({ theme }) => theme.color.text.primary};
 `;
 
+const Link = styled.a`
+  &:visited {
+    color: ${({ theme }) => theme.color.text.primary};
+  }
+`;
+
 const Footer = () => (
   <Container>
     <IconBox>
@@ -31,7 +37,12 @@ const Footer = () => (
       <Typography variant={'h2'} text={'Copyright 2021 magikabdul'} />
     </Box>
     <Box>
-      <a href={'https://produktywni.pl/blog/technika-pomodoro/'}>More info about pomodoro</a>
+      <Link href={'https://produktywni.pl/blog/technika-pomodoro/'} target={'_blank'}>
+        More info about pomodoro
+      </Link>
+    </Box>
+    <Box>
+      <Typography text={'Photo by Loonie Loveloonies from Pexels'} />
     </Box>
   </Container>
 );
