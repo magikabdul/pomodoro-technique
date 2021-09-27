@@ -5,7 +5,10 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Container = styled.div`
-  width: 200px;
+  display: block;
+  width: 400px;
+
+  margin-bottom: 20px;
 `;
 
 const Timer = ({ value }) => (
