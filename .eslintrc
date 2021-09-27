@@ -30,7 +30,7 @@
         "linebreak-style": "off",
         "object-curly-newline": [
             "error",
-            { "ImportDeclaration": { "multiline": true, "minProperties": 2 } }
+            { "ImportDeclaration": { "multiline": true, "minProperties": 5 } }
         ],
         "object-property-newline": "error",
 //        "curly": "error",
